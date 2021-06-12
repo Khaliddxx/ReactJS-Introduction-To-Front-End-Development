@@ -1,9 +1,9 @@
 import PropsType from "prop-types";
 
-const Profile = ({ fullName, bio, profession, children, handleName }) => {
+const Profile = ({ fullName, bio, profession, handleName, ...props }) => {
     return (
         <div style={{ textAlign: "center" }}>
-            <img src={children} alt="profile" width="200" />
+            {props.children}
             <h1 onClick={handleName} style={{ cursor: "pointer" }}>
                 {fullName}
             </h1>
@@ -19,7 +19,7 @@ Profile.defaultProps = {
     fullName: "Ahmed Ali",
     bio: "I'm a software engineer",
     profession: "Software Engineer",
-    children: "/man.png",
+    children: null,
     handleName: () => alert("Ahmed Ali"),
 };
 
@@ -27,6 +27,6 @@ Profile.propTypes = {
     fullName: PropsType.string,
     bio: PropsType.string,
     profession: PropsType.string,
-    children: PropsType.string,
+    children: PropsType.element,
     handleName: PropsType.func,
 };
