@@ -1,0 +1,32 @@
+.title {
+    color: tomato;
+    font-size: 200%;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border: 5px;
+}
+
+/* .skeleton {
+    border: "solid 1px black";
+    max-width: 100vw;
+} */
+
+.imginsrc {
+    width: 320px;
+    height: 240px;
+}
+
+.imginpublic {
+    width: 320px;
+    height: 240px;
+}
+
+.vid {
+    align-content: center;
+}
+
+.twt {
+    border: turquoise;
+    text-align: center;
+}
